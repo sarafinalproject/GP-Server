@@ -1,22 +1,22 @@
-const mongoose=require('mongoose');
+const mongoose = require('mongoose');
 mongoose.connect(
-    'mongodb+srv://service:service@cluster0.wporsti.mongodb.net/our_project?retryWrites=true&w=majority',{
-         
-    useNewUrlParser:true,
-    useUnifiedTopology:true
+    'mongodb+srv://service:service@cluster0.wporsti.mongodb.net/our_project?retryWrites=true&w=majority', {
 
-    }
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+
+}
 
 ),
 
-()=>{
-    try{
+    () => {
+        try {
 
-    }catch(error){
-        console.error(error);
-    }
-};
-const connection=mongoose.connection;
-connection.once('open',()=>{
+        } catch (error) {
+            console.error(error);
+        }
+    };
+const connection = mongoose.connection;
+connection.once('open', () => {
     console.log('connection to database was succesful');
 });
