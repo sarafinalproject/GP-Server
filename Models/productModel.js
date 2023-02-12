@@ -3,8 +3,11 @@ const mongoose = require("mongoose");
 let ProductSchema = new mongoose.Schema(
     {
         "name": String,
-        "category": String,
-        "city": String
+        "description": String,
+        "phone": String,
+        "city": String,
+        // "category": String,
+        // "street": String,
 
     }, { versionKey: false }
     //{ collection: "bbbs" }

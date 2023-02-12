@@ -42,7 +42,7 @@ exports.createProduct = function (obj) {
             if (err) { reject(err) }
             else {
 
-                resolve("created");
+                resolve("created",err);
             }
         })
     }
